@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Pathway Gothic One";
+    src: url(./fonts/PathwayGothicOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url(./fonts/OpenSans-Regular.ttf);
+}
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider_line {
+    left: 0;
+    transition: all ease 1s;
+    width: 100vw;
+    display: flex;
+    position: relative;
+    z-index: -1;
+}
+
+.img_lines {
+    width: 100vw;
+}
+
+.buttons {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider_prev {
+    background: transparent;
+    border: none;
+    width: 10%;
+    height: 100vh;
+}
+
+.slider_next {
+    background: transparent;
+    border: none;
+    width: 10%;
+    height: 100vh;
+}
+
+.header_menu {
+    position: absolute;
+    width: 100%;
+    height: 88px;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 2;
+}
+
+.img_search {
+    height: 21px;
+    width: 140px;
+}
+
+.chief_menu {
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.img_logo {
+    width: 48px;
+}
+
+.acc_menu {
+    width: 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img_bag {
+    width: 35px;
+}
+
+.aText {
+    font-family: "Pathway Gothic One";
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+}
+
+.arcticle_with {
+    top: -450px;
+    left: 100px;
+    width: 800px;
+    height: 335px;
+    position: relative;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.over_h1 {
+    font-family: "Pathway Gothic One";
+    font-size: 16px;
+}
+
+h1 {
+    font-family: "Pathway Gothic One";
+    font-size: 82px;
+}
+
+.under_h1 {
+    width: 200px;
+    height: 50px;
+    font-size: 24px;
+    font-family: "Pathway Gothic One";
+    border: 2px solid white;
+    border-radius: 7px;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+    cursor: pointer;
+}
+
+/* ------------------------------------------------------------------------------------ */
+
+.info_leter {
+    position: relative;
+    top: -250px;
+    width: 80%;
+    height: 630px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.info_leter_1 {
+    width: 50%;
+    height: 335px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.info_leter_2 {
+    width: 50%;
+    height: 50%;
+}
+
+.info_buttons {
+    height: 40px;
+    width: 457px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info_div {
+    height: 70%;
+    width: 503px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: "Pathway Gothic One";
+    font-size: 52px;
+}
+
+.why_we_div_img {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info_button {
+    height: 40px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    border-radius: 7px;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.info_p {
+    font-family: "Open Sans";
+    font-size: 16px;
+}
+
+.wyWe {
+    width: 119px;
+    color: black;
+    border: 2px solid black;
+}
+
+.wyWe:hover {
+    box-shadow: 5px 5px 5px black;
+}
+
+.ourStory {
+    width: 132px;
+    color: #b9b9b9;
+    border: 2px solid #b9b9b9;
+}
+
+.ourStory:hover {
+    box-shadow: 5px 5px 5px black;
+}
+
+.gameRooms {
+    width: 158px;
+    color: #b9b9b9;
+    border: 2px solid #b9b9b9;
+}
+
+.gameRooms:hover {
+    box-shadow: 5px 5px 5px black;
+}
+
+.why_we_img {
+    height: auto;
+    width: 100%;
+}
+
+.info_div_button {
+    width: 200px;
+    height: 50px;
+    background: linear-gradient(to right, #5b0385, #830047);
+    color: white;
+    font-family: "Pathway Gothic One";
+    font-size: 24px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.info_div_button:hover {
+    background: linear-gradient(to left, #5b0385, #830047);
+    box-shadow: 5px 5px 5px black;
+}
+
+.info_div_button:active {
+    background: linear-gradient(to right, #5b0385, #830047);
+    border: 2px solid black;
+    box-shadow: none;
+}
+
+.our_story {
+    display: none;
+}
+
+.game_rooms {
+    display: none;
+}
+
+.our_story_div_img {
+    display: none;
+}
+
+.game_rooms_div_img {
+    display: none;
+}
+
+.info_icon_game_white {
+    display: none;
+}
+
+.info_icon_story_black {
+    display: none;
+}
+
+.info_icon_room_black {
+    display: none;
+}
